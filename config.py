@@ -9,7 +9,7 @@ if os.path.exists("local.env"):
 API_ID = int(getenv("API_ID", "23554959")) #optional
 API_HASH = getenv("API_HASH", "cad04ad7178d62f5d50b2a37fb32ff51") #optional
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5887336213", "5919535585").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5887336213,5919535585").split()))
 OWNER_ID = int(getenv("OWNER_ID", "5887336213"))
 MONGO_URL = getenv("MONGO_URL", "mongodb://ud7kcz6totsvepy86bb2:d4gmTfoBbpzDmNLzItwG@n1-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017,n2-c2-mongodb-clevercloud-customers.services.clever-cloud.com:27017/b0ojwj6pcvvj30u?replicaSet=rs0")
 BOT_TOKEN = getenv("BOT_TOKEN", "5944740729:AAEYsqcrzsvn3evjSPQsPtKqcgVbuZuTEKk")
